@@ -4,7 +4,7 @@ import platform
 # Load the Excel file
 if platform.system() == "Windows":
     file_path = 'D:\Documents\Python\Ranked Choice Voting\HoC-GE2024-results-by-constituency.xlsx'
-if platform.system() == "OSX":
+if platform.system() == "Darwin":
     file_path = '/Users/benawcole/Desktop/Ranked Choice/HoC-GE2024-results-by-constituency.xlsx'
 excel_data = pd.ExcelFile(file_path)
 
