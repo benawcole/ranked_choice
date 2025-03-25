@@ -1,6 +1,7 @@
 import pandas as pd
 import platform
-import pprint
+from pprint import pprint
+from ConstituencyClasses import *
 
 # Load the Excel file
 if platform.system() == "Windows":
@@ -11,102 +12,45 @@ excel_data = pd.ExcelFile(file_path)
 
 # Load the data from the relevant sheet
 df = excel_data.parse()
+constituencies = ConstituencyRepo()
+constituencies.load_data(df) 
 
-class Constituency:
-    def __init__(self, id, name, country, mp, con, lab, ld, ruk, green, snp, pc, dup, sf, sdlp, uup, apni, ind, other):
-        self.id = id
-        self.name = name
-        self.country = country
-        self.mp = mp
-        self.con = con
-        self.lab = lab
-        self.ld = ld
-        self.ruk = ruk
-        self.green = green
-        self.snp = snp
-        self.pc = pc
-        self.dup = dup
-        self.sf = sf
-        self.sdlp = sdlp
-        self.uup = uup
-        self.apni = apni
-        self.ind = ind
-        self.other = other #All other votes 2
+loop = True
+while loop == True:
+    c = input("Enter constituency (or leave empty to exit): ")
+    if c == "":
+        loop = False
+    else:
+        constituency = constituencies.get_single_constituency(c)
+        percent = input("Threshold percentage:    %" + '\b' * 4)
+        constituency.remove_lower_percentile(percent)
+        
 
-class ConstituencyRepo:
-    def __init__(self):
-        self.constituencyrepo = []
+# Distributions by party
+# (just the table - hard coded for now - with the axes swapped)
 
-    def add(self, constituency):
-        self.constituencyrepo.append(constituency)
-    
-    def england():
-        england = []
-        for constituency in self.constituencyrepo:
-            if constituency.country == "England":
-                england.append(constituency)
-        return england
+con_distribution =      [0, 1, 2, 4, 3, 3, 3, 3, 2, 3, 4, 3, 3, 0]
+lab_distribution =      [1, 0, 2, 2, 3, 0, 3, 3, 3, 3, 2, 3, 3, 0]
+ld_distribution =       [3, 3, 0, 2, 3, 0, 3, 3, 3, 3, 3, 3, 3, 0] 
+ruk_distribution =      [4, 2, 2, 0, 1, 1, 1, 3, 1, 1, 3, 2, 2, 0] 
+green_distribution =    [1, 3, 1, 1, 0, 1, 3, 3, 3, 3, 3, 3, 3, 0]
+snp_distribution =      [3, 3, 3, 1, 3, 0, 4, 0, 4, 4, 0, 3, 3, 0]
+pc_distribution =       [3, 3, 3, 1, 3, 4, 0, 0, 4, 4, 0, 3, 3, 0]
+dup_distribution =      [3, 2, 3, 3, 2, 0, 0, 0, 0, 0, 0, 3, 3, 0]
+sf_distribution =       [2, 2, 2, 1, 2, 4, 4, 0, 0, 4, 0, 3, 3, 0]
+sdlp_distribution =     [2, 3, 2, 1, 3, 4, 4, 0, 4, 0, 0, 3, 3, 0]
+uup_distribution =      [4, 2, 2, 3, 3, 0, 0, 3, 0, 0, 3, 3, 3, 0]
+apni_distribution =     [3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 0, 3, 0]
+ind_distribution =      [3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 4, 0, 0]
+other_distribution =    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-    def scotland():
-        scotland = []
-        for constituency in self.constituencyrepo:
-            if constituency.country == "Scotland":
-                scotland.append(constituency)
-        return scotland
-
-    def wales():
-        wales = []
-        for constituency in self.constituencyrepo:
-            if constituency.country == "Wales":
-                wales.append(constituency)
-        return wales
-
-    def northern_ireland():
-        northern_ireland = []
-        for constituency in self.constituencyrepo:
-            if constituency.country == "Northern Ireland":
-                northern_ireland.append(constituency)
-        return northern_ireland
-
-constituency_repo = ConstituencyRepo()
-
-i = 0
-while i < len(df):
-    constituency = Constituency(i, 
-                                df["Constituency name"][i],
-                                df["Country name"][i],
-                                f"{df["Member first name"][i]} {df["Member surname"][i]}",
-                                df["Party - Con"][i],
-                                df["Party - Lab"][i],
-                                df["Party - LD"][i],
-                                df["Party - RUK"][i],
-                                df["Party - Green"][i],
-                                df["Party - SNP"][i],
-                                df["Party - PC"][i],
-                                df["Party - DUP"][i],
-                                df["Party - SF"][i],
-                                df["Party - SDLP"][i],
-                                df["Party - UUP"][i],
-                                df["Party - APNI"][i],
-                                df["Party - Winner if IND or other"][i],
-                                df["Party - All other candidates 2"][i])
-    constituency_repo.add({constituency})
-    i += 1
-
-# Define party columns
-parties = [
-    'Party - Con', 'Party - Lab', 'Party - LD', 'Party - RUK', 'Party - Green',
-    'Party - SNP', 'Party - PC', 'Party - DUP', 'Party - SF',
-    'Party - SDLP', 'Party - UUP', 'Party - APNI',
-    'Party - Winner if IND or other', 'Party - All other candidates 2'
-]
 
 # Load excel file of Mapping Proposal
 
 # Find out how to use DataFrame Obj
 
 # if Party get >50% => WIN
-# elif Party <5%, map Party's votes using Mapping Proposal, Party matrix number goes to 0
+# elif Party <5% of the total votes, map Party's votes using Mapping Proposal, Party matrix number goes to 0
 
 # Mapping Proposal needs to use Vote Matrix and Still-In-Game Matrix
 
