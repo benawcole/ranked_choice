@@ -1,30 +1,80 @@
 import pandas as pd
 import platform
 from pprint import pprint
+from consolemenu import *
+from consolemenu.items import *
 from ConstituencyClasses import *
 
-# Load the Excel file
+# Load the Excel files
 if platform.system() == "Windows":
-    file_path = "D:\Documents\Python\Ranked Choice Voting\HoC-GE2024-results-by-constituency.xlsx"
+    results_file_path = "D:\Documents\Python\Ranked Choice Voting\HoC-GE2024-results-by-constituency.xlsx"
+    mapping_file_path = "" #JOHN FILL THIS IN
 if platform.system() == "Darwin":
-    file_path = "/Users/benawcole/Desktop/Ranked Choice/2024-results-adjusted.xlsx"
-excel_data = pd.ExcelFile(file_path)
+    results_file_path = "/Users/benawcole/Desktop/Ranked Choice/2024-results-adjusted.xlsx"
+    mapping_file_path = "/Users/benawcole/Desktop/Ranked Choice/Mapping Proposal 1.xlsx"
 
-# Load the data from the relevant sheet
-df = excel_data.parse()
-constituencies = ConstituencyRepo()
-constituencies.load_data(df) 
+def reset_data():
+    # Load the data from the results
+    results_excel_data = pd.ExcelFile(results_file_path)
+    global results_df 
+    results_df = results_excel_data.parse()
+    global constituencies 
+    constituencies = ConstituencyRepo()
+    constituencies.load_data(results_df)
+
+    # Load the data from the mapping proposal
+    mapping_excel_data = pd.ExcelFile(mapping_file_path)
+    global mapping_df
+    mapping_df = mapping_excel_data.parse()
+    mapping_df.index = ['Con', 'Lab', 'LD', 'RUK', 'Green', 'SNP', 'PC', 'DUP', 'SF', 'SDLP', 'UUP', 'APNI', 'Ind', 'Other']
+
+reset_data()
+
+c = input("Enter constituency: ")
+constituency = constituencies.get_single_constituency(c)
+
+menu = ConsoleMenu("Ranked Choice")
+# menu_find_constituency = FunctionItem("Find constituency", "constituencies.get_single_constituency(c)", ["input('select a constituency:')"])
+menu_find_constituency = FunctionItem("Find constituency", find_constituency())
+menu.append_item(menu_find_constituency)
+menu.show()
+
+# change first column to parties
 
 loop = True
-while loop == True:
+while loop:
     c = input("Enter constituency (or leave empty to exit): ")
     if c == "":
         loop = False
     else:
-        constituency = constituencies.get_single_constituency(c)
-        percent = input("Threshold percentage:    %" + '\b' * 4)
-        constituency.remove_lower_percentile(percent)
+            percent = input("Threshold percentage:   %" + '\b' * 3)
+            print("> Applying filter...'n")
+            data = constituency.remove_lower_percentile(percent)
+            print(f"--- Remaining parties (Total - {sum(constituency.remaining_votes.values())}):\n    { {k: v for k, v in constituency.remaining_votes.items() if v > 0} }")
+            print(f"--- Extra votes (Total - {sum(constituency.extra_votes.values())}):\n    { {k: v for k, v in constituency.extra_votes.items() if v > 0} }")
+            answered1 = False # in respect to the code two lines below
+            while not answered1:
+                mapping = input(f"\nPlease confirm the loaded mapping matrix:\n\n{mapping_file_path}\n\n{mapping_df}\n\n(Y/N): ")
+                while not constituency.filtered:
+                    if mapping[0].lower() == "y":
+                        data = constituency.redistribute_votes(mapping_df)
+                        print(f"\n\n{data[2]}\n\nRedistributed votes:\n\n", data[0], f"   (± {data[1]} votes)\n")
+                        if constituency.filtered:
+                            answered1 = True
+                        else:
+                            pass
+                    elif mapping[0].lower() == "n":
+                        print("Please load the relevant mapping matrix\n")
+                        answered1 = True
+                    else:
+                        print("Please enter a valid response")
+
+
         
+
+
+        
+            
 
 # Distributions by party
 # (just the table - hard coded for now - with the axes swapped)
