@@ -1,45 +1,36 @@
 import pandas as pd
 import platform
 from pprint import pprint
-from consolemenu import *
-from consolemenu.items import *
 from ConstituencyClasses import *
 
 # Load the Excel files
+def load_voter_data(file_path):
+    # Load the data from the results
+    results_excel_data = pd.ExcelFile(file_path)
+    global results_df 
+    results_df = results_excel_data.parse()
+    global constituencies
+    constituencies = ConstituencyRepo()
+    constituencies.load_data(results_df)
+
+def load_mapping_data(file_path):
+    # Load the data from the mapping proposal
+    mapping_excel_data = pd.ExcelFile(file_path)
+    global mapping_df
+    mapping_df = mapping_excel_data.parse()
+    mapping_df.index = ['Con', 'Lab', 'LD', 'RUK', 'Green', 'SNP', 'PC', 'DUP', 'SF', 'SDLP', 'UUP', 'APNI', 'Ind', 'Other']
+
 if platform.system() == "Windows":
-    results_file_path = "D:\Documents\Python\Ranked Choice Voting\HoC-GE2024-results-by-constituency.xlsx"
+    results_file_path = r'D:\Documents\Python\Ranked Choice Voting\2024-results-adjusted.xlsx'
     mapping_file_path = "" #JOHN FILL THIS IN
 if platform.system() == "Darwin":
     results_file_path = "/Users/benawcole/Desktop/Ranked Choice/2024-results-adjusted.xlsx"
     mapping_file_path = "/Users/benawcole/Desktop/Ranked Choice/Mapping Proposal 1.xlsx"
 
-def reset_data():
-    # Load the data from the results
-    results_excel_data = pd.ExcelFile(results_file_path)
-    global results_df 
-    results_df = results_excel_data.parse()
-    global constituencies 
-    constituencies = ConstituencyRepo()
-    constituencies.load_data(results_df)
+load_voter_data(results_file_path)
+load_mapping_data(mapping_file_path)
 
-    # Load the data from the mapping proposal
-    mapping_excel_data = pd.ExcelFile(mapping_file_path)
-    global mapping_df
-    mapping_df = mapping_excel_data.parse()
-    mapping_df.index = ['Con', 'Lab', 'LD', 'RUK', 'Green', 'SNP', 'PC', 'DUP', 'SF', 'SDLP', 'UUP', 'APNI', 'Ind', 'Other']
-
-reset_data()
-
-c = input("Enter constituency: ")
-constituency = constituencies.get_single_constituency(c)
-
-menu = ConsoleMenu("Ranked Choice")
-# menu_find_constituency = FunctionItem("Find constituency", "constituencies.get_single_constituency(c)", ["input('select a constituency:')"])
-menu_find_constituency = FunctionItem("Find constituency", find_constituency())
-menu.append_item(menu_find_constituency)
-menu.show()
-
-# change first column to parties
+# User interface:
 
 loop = True
 while loop:
@@ -47,27 +38,30 @@ while loop:
     if c == "":
         loop = False
     else:
-            percent = input("Threshold percentage:   %" + '\b' * 3)
-            print("> Applying filter...'n")
-            data = constituency.remove_lower_percentile(percent)
-            print(f"--- Remaining parties (Total - {sum(constituency.remaining_votes.values())}):\n    { {k: v for k, v in constituency.remaining_votes.items() if v > 0} }")
-            print(f"--- Extra votes (Total - {sum(constituency.extra_votes.values())}):\n    { {k: v for k, v in constituency.extra_votes.items() if v > 0} }")
-            answered1 = False # in respect to the code two lines below
-            while not answered1:
-                mapping = input(f"\nPlease confirm the loaded mapping matrix:\n\n{mapping_file_path}\n\n{mapping_df}\n\n(Y/N): ")
-                while not constituency.filtered:
-                    if mapping[0].lower() == "y":
-                        data = constituency.redistribute_votes(mapping_df)
-                        print(f"\n\n{data[2]}\n\nRedistributed votes:\n\n", data[0], f"   (± {data[1]} votes)\n")
-                        if constituency.filtered:
-                            answered1 = True
-                        else:
-                            pass
-                    elif mapping[0].lower() == "n":
-                        print("Please load the relevant mapping matrix\n")
-                        answered1 = True
-                    else:
-                        print("Please enter a valid response")
+        constituency = constituencies.get_single_constituency(c)
+        while not constituency.check_for_winner():
+            mapping = input(f"Please confirm the loaded mapping matrix:\n{mapping_file_path}\n\n{mapping_df}\n\n(Y/N): ")
+            if mapping.lower() == "y":
+                while not constituency.check_for_winner():
+                    print(f"Minimum threshold percentage for next round: {constituency.minimum_percentage}%")
+                    percent = input("Threshold percentage:   %" + "\b" * 3)
+                    print("> Applying filter...\n")
+                    constituency.remove_lower_percentile(percent)
+                    print(  f"=== ROUND {constituency.knockout_counter} ===\n\n",
+                            f"--- Remaining parties (Total - {sum(constituency.remaining_votes.values())}):\n    { {k: v for k, v in constituency.remaining_votes.items() if v > 0} }\n",
+                            f"--- Extra votes (Total - {sum(constituency.extra_votes.values())}):\n    { {k: v for k, v in constituency.extra_votes.items() if v > 0} }")
+                    summing_df = constituency.redistribute_votes(mapping_df)
+                    print(  f"\n{summing_df}\n\n--- Redistributed votes:\n", 
+                            f"\b--- { {k: v for k, v in constituency.sorted_votes.items() if v > 0} }",
+                            f"   (± {abs(constituency.total_votes - constituency.new_total_votes)} votes)\n")   
+            else:
+                mapping_file_path = input("\nPlease load the relevant mapping matrix (file path): ")
+                load_mapping_data(mapping_file_path)
+        else:
+            print(f"{next(iter(constituency.sorted_votes.keys()))} has {round((next(iter(constituency.sorted_votes.values()))/constituency.new_total_votes)*100, 1)}% of the vote after {constituency.knockout_counter} rounds.\n")
+            pass
+
+
 
 
         

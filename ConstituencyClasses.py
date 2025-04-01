@@ -45,10 +45,20 @@ class Constituency:
     def sorted_votes(self):
         return dict(sorted(self.votes.items(), key=lambda item: item[1], reverse=True))
 
+    @property
+    def minimum_percentage(self):
+        d = {k: v for k, v in self.sorted_votes.items() if v > 0}
+        return round(d[next(reversed(d))]*100/self.total_votes, 2)
+
+    @property
+    def maximum_percentage(self):
+        d = {k: v for k, v in self.sorted_votes.items() if v > 0}
+        return round(d[next(reversed(d))]*100/self.total_votes, 2)
+
     def check_for_winner(self):
         if next(iter(self.sorted_votes.values())) > 0.5 * self.total_votes:
             self.filtered = True
-            print(f"{next(iter(self.sorted_votes.keys()))} has >50% of the vote after {self.knockout_counter} rounds.\n")
+        return self.filtered
 
     def remove_lower_percentile(self, percent):
         self.check_for_winner()
@@ -56,13 +66,13 @@ class Constituency:
             self.remaining_votes = {k: 0 for k, v in self.sorted_votes.items()}
             self.extra_votes = {k: 0 for k, v in self.sorted_votes.items()}
             for k, v in self.sorted_votes.items():
-                if v >= self.total_votes * int(percent)/100:
+                if v >= self.total_votes * float(percent)/100:
                     self.remaining_votes[k] = v
                 else:
                     self.extra_votes[k] = v
-            self.knockout_counter =+ 1
-            return [self.remaining_votes, self.extra_votes]            
-        
+            self.knockout_counter += 1
+            return [self.remaining_votes, self.extra_votes]
+
     def redistribute_votes(self, mapping_df):
         if self.extra_votes == {k: 0 for k, v in self.sorted_votes.items()}:
             raise Exception("No votes to redistribute - please increase the threshold percentage")
@@ -80,7 +90,7 @@ class Constituency:
                     summing_df.loc[k, column] = round(result, 0)
                 elif summing_df.loc[k, column] == mapping_df.loc[k, column]:
                     summing_df.loc[k, column] = 0
-        # add Total at the bottom 
+        # add Total at the bottom
         df_sum = summing_df.sum()
         summing_df.loc["Total"] = df_sum
         # add to winners' total
@@ -90,7 +100,7 @@ class Constituency:
             self.new_total_votes += v + int(summing_df.loc["Total", k])
         self.votes = self.remaining_votes
         self.check_for_winner()
-        return [{k: v for k, v in self.sorted_votes.items() if v > 0}, abs(self.total_votes - self.new_total_votes), summing_df]
+        return summing_df
 
     def __repr__(self):
         return f"{self.name} - Party: {next(iter(self.sorted_votes))} ({self.mp})"
@@ -148,7 +158,7 @@ class ConstituencyRepo:
             raise Exception("No data in repo - please use load_data()")
         for constituency in self.constituencyrepo:
             if constituency.name.lower() == constituency_str.lower():
-                print(f"\n=== {str(constituency)} ===")
+                print(f"\n====== {str(constituency)} ======")
                 pprint(constituency.sorted_votes, sort_dicts=False)
                 print(f"\nTotal votes: {constituency.total_votes}\n")
                 return constituency
