@@ -11,5 +11,5 @@ source path/to/osx.sh
 ```
 Windows:
 ```bat
-call windows.bat
+call path/to/windows.bat
 ```
