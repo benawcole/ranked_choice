@@ -43,7 +43,7 @@ while loop:
             mapping = input(f"Please confirm the loaded mapping matrix:\n{mapping_file_path}\n\n{mapping_df}\n\n(Y/N): ")
             if mapping.lower() == "y":
                 while not constituency.check_for_winner():
-                    print(f"Minimum threshold percentage for next round: {constituency.minimum_percentage}%")
+                    print(f"Threshold percentage for next round: Min: {constituency.minimum_percentage}%, Max: {constituency.maximum_percentage}%")
                     percent = input("Threshold percentage:   %" + "\b" * 3)
                     print("> Applying filter...\n")
                     constituency.remove_lower_percentile(percent)
@@ -55,7 +55,7 @@ while loop:
                             f"\b--- { {k: v for k, v in constituency.sorted_votes.items() if v > 0} }",
                             f"   (± {abs(constituency.total_votes - constituency.new_total_votes)} votes)\n")   
             else:
-                mapping_file_path = input("\nPlease load the relevant mapping matrix (file path): ")
+                mapping_file_path = input("\nPlease load the relevant mapping matrix file path: ")
                 load_mapping_data(mapping_file_path)
         else:
             print(f"{next(iter(constituency.sorted_votes.keys()))} has {round((next(iter(constituency.sorted_votes.values()))/constituency.new_total_votes)*100, 1)}% of the vote after {constituency.knockout_counter} rounds.\n")

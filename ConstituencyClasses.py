@@ -40,7 +40,20 @@ class Constituency:
         self.total_votes = int(con + lab + ld + ruk + green + snp + pc + dup + sf + sdlp + uup + apni + ind + other)
         self.knockout_counter = 0
         self.filtered = False
+        self.rounds = {}
+        self.payload = {}
+        self.input_percent = 0
+        self.new_total_votes = self.total_votes
+        self.save_round_to_payload(0)
     
+    @property
+    def info(self):
+        return {"id":self.id,
+                "name":self.name,
+                "country":self.country,
+                "mp":self.mp,
+                "votes": self.payload}
+
     @property
     def sorted_votes(self):
         return dict(sorted(self.votes.items(), key=lambda item: item[1], reverse=True))
@@ -53,7 +66,15 @@ class Constituency:
     @property
     def maximum_percentage(self):
         d = {k: v for k, v in self.sorted_votes.items() if v > 0}
-        return round(d[next(reversed(d))]*100/self.total_votes, 2)
+        return round(d[next(iter(d))]*100/self.total_votes, 2)
+
+    def save_round_to_payload(self, bumper=0):
+        self.payload[self.knockout_counter + bumper] = {  
+            "maximum_percentage":self.maximum_percentage,
+            "minimum_percentage":self.minimum_percentage,
+            "input_percentage":self.input_percent,
+            "votes":self.sorted_votes,
+            "margin_of_error":abs(self.new_total_votes-self.total_votes)}
 
     def check_for_winner(self):
         if next(iter(self.sorted_votes.values())) > 0.5 * self.total_votes:
@@ -61,8 +82,9 @@ class Constituency:
         return self.filtered
 
     def remove_lower_percentile(self, percent):
-        self.check_for_winner()
-        if not self.filtered:
+        self.input_percent = percent
+        self.knockout_counter += 1
+        if not self.check_for_winner():
             self.remaining_votes = {k: 0 for k, v in self.sorted_votes.items()}
             self.extra_votes = {k: 0 for k, v in self.sorted_votes.items()}
             for k, v in self.sorted_votes.items():
@@ -70,12 +92,12 @@ class Constituency:
                     self.remaining_votes[k] = v
                 else:
                     self.extra_votes[k] = v
-            self.knockout_counter += 1
             return [self.remaining_votes, self.extra_votes]
 
     def redistribute_votes(self, mapping_df):
         if self.extra_votes == {k: 0 for k, v in self.sorted_votes.items()}:
-            raise Exception("No votes to redistribute - please increase the threshold percentage")
+            if not len({k: v for k, v in self.sorted_votes.items() if v > 0}) == 1:
+                raise Exception("No votes to redistribute - please increase the threshold percentage")
         summing_df = mapping_df.copy()
         # Turn all columns of extra parties to 0
         for k, v in self.remaining_votes.items():
@@ -102,7 +124,7 @@ class Constituency:
         self.check_for_winner()
         return summing_df
 
-    def __repr__(self):
+    def __str__(self):
         return f"{self.name} - Party: {next(iter(self.sorted_votes))} ({self.mp})"
 
 class ConstituencyRepo:
@@ -112,7 +134,8 @@ class ConstituencyRepo:
     def load_data(self, df):
         i = 0
         while i < len(df):
-            constituency = Constituency(i, 
+            constituency = Constituency(
+                                i, 
                                 df["Constituency name"][i],
                                 df["Country name"][i],
                                 f"{df["Member first name"][i]} {df["Member surname"][i]}",
@@ -158,12 +181,19 @@ class ConstituencyRepo:
             raise Exception("No data in repo - please use load_data()")
         for constituency in self.constituencyrepo:
             if constituency.name.lower() == constituency_str.lower():
+                return constituency
+        raise Exception("Constituency not found") 
+
+    def print_single_constituency(self, constituency_str):
+        if self.constituencyrepo == []:
+            raise Exception("No data in repo - please use load_data()")    
+        for constituency in self.constituencyrepo:    
+            if constituency.name.lower() == constituency_str.lower():
                 print(f"\n====== {str(constituency)} ======")
                 pprint(constituency.sorted_votes, sort_dicts=False)
                 print(f"\nTotal votes: {constituency.total_votes}\n")
-                return constituency
         raise Exception("Constituency not found") 
-            
+   
     def get_all_constituencies(self):
         if self.constituencyrepo == []:
             raise Exception("No data in repo - please use load_data()")
