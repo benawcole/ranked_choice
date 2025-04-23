@@ -1,0 +1,2734 @@
+{
+    "Aberafan Maesteg": {
+        "name": "Aberafan Maesteg",
+        "country": "Wales",
+        "mp": "Stephen Kinnock",
+        "votes": {
+            "0": {
+                "maximum_percentage": 49.89,
+                "minimum_percentage": 2.24,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 17838,
+                    "RUK": 7484,
+                    "PC": 4719,
+                    "Con": 2903,
+                    "Green": 1094,
+                    "LD": 916,
+                    "Other": 801,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 51.99,
+                "minimum_percentage": 10.22,
+                "input_percentage": 5.0,
+                "votes": {
+                    "Lab": 18588,
+                    "RUK": 7943,
+                    "PC": 5570,
+                    "Con": 3653,
+                    "Green": 0,
+                    "LD": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 1
+            }
+        }
+    },
+    "Alyn and Deeside": {
+        "name": "Alyn and Deeside",
+        "country": "Wales",
+        "mp": "Mark Tami",
+        "votes": {
+            "0": {
+                "maximum_percentage": 42.39,
+                "minimum_percentage": 3.63,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 18395,
+                    "RUK": 9601,
+                    "Con": 7892,
+                    "LD": 2065,
+                    "PC": 1938,
+                    "Green": 1926,
+                    "Other": 1575,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 49.16,
+                "minimum_percentage": 24.95,
+                "input_percentage": 5.0,
+                "votes": {
+                    "Lab": 21330,
+                    "RUK": 11235,
+                    "Con": 10827,
+                    "LD": 0,
+                    "PC": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "2": {
+                "maximum_percentage": 54.15,
+                "minimum_percentage": 45.85,
+                "input_percentage": 25.0,
+                "votes": {
+                    "Lab": 23495,
+                    "RUK": 19897,
+                    "Con": 0,
+                    "LD": 0,
+                    "PC": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            }
+        }
+    },
+    "Bangor Aberconwy": {
+        "name": "Bangor Aberconwy",
+        "country": "Wales",
+        "mp": "Claire Hughes",
+        "votes": {
+            "0": {
+                "maximum_percentage": 33.62,
+                "minimum_percentage": 1.27,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 14008,
+                    "PC": 9112,
+                    "Con": 9036,
+                    "RUK": 6091,
+                    "LD": 1524,
+                    "Green": 1361,
+                    "Other": 528,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 35.76,
+                "minimum_percentage": 15.99,
+                "input_percentage": 5.0,
+                "votes": {
+                    "Lab": 14899,
+                    "PC": 10172,
+                    "Con": 9927,
+                    "RUK": 6662,
+                    "LD": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "2": {
+                "maximum_percentage": 40.33,
+                "minimum_percentage": 26.7,
+                "input_percentage": 20.0,
+                "votes": {
+                    "Lab": 16802,
+                    "Con": 13734,
+                    "PC": 11124,
+                    "RUK": 0,
+                    "LD": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "3": {
+                "maximum_percentage": 53.68,
+                "minimum_percentage": 46.32,
+                "input_percentage": 30.0,
+                "votes": {
+                    "Lab": 22364,
+                    "Con": 19296,
+                    "PC": 0,
+                    "RUK": 0,
+                    "LD": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            }
+        }
+    },
+    "Blaenau Gwent and Rhymney": {
+        "name": "Blaenau Gwent and Rhymney",
+        "country": "Wales",
+        "mp": "Nick Smith",
+        "votes": {
+            "0": {
+                "maximum_percentage": 53.56,
+                "minimum_percentage": 4.24,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 16027,
+                    "PC": 3844,
+                    "Con": 3776,
+                    "Other": 3288,
+                    "Green": 1719,
+                    "LD": 1268,
+                    "RUK": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 53.56,
+                "minimum_percentage": 4.24,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 16027,
+                    "PC": 3844,
+                    "Con": 3776,
+                    "Other": 3288,
+                    "Green": 1719,
+                    "LD": 1268,
+                    "RUK": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            }
+        }
+    },
+    "Brecon, Radnor and Cwm Tawe": {
+        "name": "Brecon, Radnor and Cwm Tawe",
+        "country": "Wales",
+        "mp": "David Chadwick",
+        "votes": {
+            "0": {
+                "maximum_percentage": 29.51,
+                "minimum_percentage": 1.31,
+                "input_percentage": 0,
+                "votes": {
+                    "LD": 13736,
+                    "Con": 12264,
+                    "Lab": 9904,
+                    "RUK": 6567,
+                    "PC": 2280,
+                    "Green": 1188,
+                    "Other": 609,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 32.1,
+                "minimum_percentage": 15.09,
+                "input_percentage": 5.0,
+                "votes": {
+                    "LD": 14942,
+                    "Con": 13470,
+                    "Lab": 11110,
+                    "RUK": 7025,
+                    "PC": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 1
+            },
+            "2": {
+                "maximum_percentage": 36.48,
+                "minimum_percentage": 27.64,
+                "input_percentage": 20.0,
+                "votes": {
+                    "Con": 16982,
+                    "LD": 16698,
+                    "Lab": 12866,
+                    "RUK": 0,
+                    "PC": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 2
+            },
+            "3": {
+                "maximum_percentage": 56.6,
+                "minimum_percentage": 43.39,
+                "input_percentage": 30.0,
+                "votes": {
+                    "LD": 26348,
+                    "Con": 20198,
+                    "Lab": 0,
+                    "RUK": 0,
+                    "PC": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 2
+            }
+        }
+    },
+    "Bridgend": {
+        "name": "Bridgend",
+        "country": "Wales",
+        "mp": "Chris Elmore",
+        "votes": {
+            "0": {
+                "maximum_percentage": 39.92,
+                "minimum_percentage": 3.49,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 16516,
+                    "RUK": 7921,
+                    "Con": 6764,
+                    "PC": 3629,
+                    "Other": 3338,
+                    "Green": 1760,
+                    "LD": 1446,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 41.54,
+                "minimum_percentage": 9.68,
+                "input_percentage": 5.0,
+                "votes": {
+                    "Lab": 17185,
+                    "RUK": 8319,
+                    "Con": 7433,
+                    "PC": 4429,
+                    "Other": 4007,
+                    "Green": 0,
+                    "LD": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 1
+            },
+            "2": {
+                "maximum_percentage": 44.18,
+                "minimum_percentage": 13.35,
+                "input_percentage": 10.0,
+                "votes": {
+                    "Lab": 18278,
+                    "RUK": 9048,
+                    "Con": 8526,
+                    "PC": 5522,
+                    "Other": 0,
+                    "Green": 0,
+                    "LD": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "3": {
+                "maximum_percentage": 49.9,
+                "minimum_percentage": 23.78,
+                "input_percentage": 15.0,
+                "votes": {
+                    "Lab": 20645,
+                    "Con": 10893,
+                    "RUK": 9837,
+                    "PC": 0,
+                    "Other": 0,
+                    "Green": 0,
+                    "LD": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 1
+            },
+            "4": {
+                "maximum_percentage": 57.82,
+                "minimum_percentage": 42.18,
+                "input_percentage": 25.0,
+                "votes": {
+                    "Lab": 23924,
+                    "Con": 17451,
+                    "RUK": 0,
+                    "PC": 0,
+                    "Other": 0,
+                    "Green": 0,
+                    "LD": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 1
+            }
+        }
+    },
+    "Caerfyrddin": {
+        "name": "Caerfyrddin",
+        "country": "Wales",
+        "mp": "Ann Davies",
+        "votes": {
+            "0": {
+                "maximum_percentage": 34.03,
+                "minimum_percentage": 1.09,
+                "input_percentage": 0,
+                "votes": {
+                    "PC": 15520,
+                    "Lab": 10985,
+                    "Con": 8825,
+                    "RUK": 6944,
+                    "LD": 1461,
+                    "Green": 1371,
+                    "Other": 498,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 36.3,
+                "minimum_percentage": 16.44,
+                "input_percentage": 5.0,
+                "votes": {
+                    "PC": 16554,
+                    "Lab": 11857,
+                    "Con": 9697,
+                    "RUK": 7497,
+                    "LD": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 1
+            },
+            "2": {
+                "maximum_percentage": 38.65,
+                "minimum_percentage": 30.66,
+                "input_percentage": 20.0,
+                "votes": {
+                    "PC": 17625,
+                    "Lab": 13999,
+                    "Con": 13981,
+                    "RUK": 0,
+                    "LD": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 1
+            },
+            "3": {
+                "maximum_percentage": 100.0,
+                "minimum_percentage": 100.0,
+                "input_percentage": 35.0,
+                "votes": {
+                    "PC": 45605,
+                    "Lab": 0,
+                    "Con": 0,
+                    "RUK": 0,
+                    "LD": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 1
+            }
+        }
+    },
+    "Caerphilly": {
+        "name": "Caerphilly",
+        "country": "Wales",
+        "mp": "Chris Evans",
+        "votes": {
+            "0": {
+                "maximum_percentage": 38.02,
+                "minimum_percentage": 4.32,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 14538,
+                    "PC": 8119,
+                    "RUK": 7754,
+                    "Con": 4385,
+                    "LD": 1788,
+                    "Green": 1650,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 40.36,
+                "minimum_percentage": 13.8,
+                "input_percentage": 5.0,
+                "votes": {
+                    "Lab": 15430,
+                    "PC": 9210,
+                    "RUK": 8316,
+                    "Con": 5277,
+                    "LD": 0,
+                    "Green": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 1
+            },
+            "2": {
+                "maximum_percentage": 42.08,
+                "minimum_percentage": 28.65,
+                "input_percentage": 15.0,
+                "votes": {
+                    "Lab": 16090,
+                    "PC": 11189,
+                    "RUK": 10954,
+                    "Con": 0,
+                    "LD": 0,
+                    "Green": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 1
+            },
+            "3": {
+                "maximum_percentage": 100.0,
+                "minimum_percentage": 100.0,
+                "input_percentage": 30.0,
+                "votes": {
+                    "Lab": 38233,
+                    "PC": 0,
+                    "RUK": 0,
+                    "Con": 0,
+                    "LD": 0,
+                    "Green": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 1
+            }
+        }
+    },
+    "Cardiff East": {
+        "name": "Cardiff East",
+        "country": "Wales",
+        "mp": "Jo Stevens",
+        "votes": {
+            "0": {
+                "maximum_percentage": 40.47,
+                "minimum_percentage": 0.5,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 15833,
+                    "LD": 6736,
+                    "RUK": 4980,
+                    "Green": 3916,
+                    "Con": 3913,
+                    "PC": 3550,
+                    "Other": 195,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 40.56,
+                "minimum_percentage": 9.16,
+                "input_percentage": 5.0,
+                "votes": {
+                    "Lab": 15867,
+                    "LD": 6770,
+                    "RUK": 5003,
+                    "Green": 3950,
+                    "Con": 3947,
+                    "PC": 3584,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 2
+            },
+            "2": {
+                "maximum_percentage": 42.67,
+                "minimum_percentage": 12.2,
+                "input_percentage": 10.0,
+                "votes": {
+                    "Lab": 16694,
+                    "LD": 7597,
+                    "RUK": 5279,
+                    "Green": 4777,
+                    "Con": 4774,
+                    "PC": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 2
+            },
+            "3": {
+                "maximum_percentage": 58.57,
+                "minimum_percentage": 41.42,
+                "input_percentage": 15.0,
+                "votes": {
+                    "Lab": 22916,
+                    "LD": 16205,
+                    "RUK": 0,
+                    "Green": 0,
+                    "Con": 0,
+                    "PC": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 2
+            }
+        }
+    },
+    "Cardiff North": {
+        "name": "Cardiff North",
+        "country": "Wales",
+        "mp": "Anna McMorrin",
+        "votes": {
+            "0": {
+                "maximum_percentage": 43.92,
+                "minimum_percentage": 6.66,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 20849,
+                    "Con": 9642,
+                    "RUK": 5985,
+                    "PC": 4669,
+                    "LD": 3168,
+                    "Green": 3160,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 53.21,
+                "minimum_percentage": 17.19,
+                "input_percentage": 10.0,
+                "votes": {
+                    "Lab": 25260,
+                    "Con": 14053,
+                    "RUK": 8159,
+                    "PC": 0,
+                    "LD": 0,
+                    "Green": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 1
+            }
+        }
+    },
+    "Cardiff South and Penarth": {
+        "name": "Cardiff South and Penarth",
+        "country": "Wales",
+        "mp": "Stephen Doughty",
+        "votes": {
+            "0": {
+                "maximum_percentage": 44.49,
+                "minimum_percentage": 7.42,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 17428,
+                    "Green": 5661,
+                    "Con": 5459,
+                    "RUK": 4493,
+                    "PC": 3227,
+                    "LD": 2908,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 49.08,
+                "minimum_percentage": 14.41,
+                "input_percentage": 10.0,
+                "votes": {
+                    "Lab": 19227,
+                    "Con": 7258,
+                    "Green": 7044,
+                    "RUK": 5647,
+                    "PC": 0,
+                    "LD": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 0
+            },
+            "2": {
+                "maximum_percentage": 53.2,
+                "minimum_percentage": 20.04,
+                "input_percentage": 15.0,
+                "votes": {
+                    "Lab": 20840,
+                    "Con": 10485,
+                    "Green": 7851,
+                    "RUK": 0,
+                    "PC": 0,
+                    "LD": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 0
+            }
+        }
+    },
+    "Cardiff West": {
+        "name": "Cardiff West",
+        "country": "Wales",
+        "mp": "Alex Barros-Curtis",
+        "votes": {
+            "0": {
+                "maximum_percentage": 36.74,
+                "minimum_percentage": 3.02,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 16442,
+                    "PC": 9423,
+                    "Con": 6835,
+                    "RUK": 5626,
+                    "Green": 3157,
+                    "LD": 1921,
+                    "Other": 1353,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 38.24,
+                "minimum_percentage": 8.13,
+                "input_percentage": 5.0,
+                "votes": {
+                    "Lab": 17116,
+                    "PC": 10289,
+                    "Con": 7509,
+                    "RUK": 6203,
+                    "Green": 3639,
+                    "LD": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 1
+            },
+            "2": {
+                "maximum_percentage": 40.68,
+                "minimum_percentage": 14.67,
+                "input_percentage": 10.0,
+                "votes": {
+                    "Lab": 18208,
+                    "PC": 11381,
+                    "Con": 8601,
+                    "RUK": 6567,
+                    "Green": 0,
+                    "LD": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "3": {
+                "maximum_percentage": 44.87,
+                "minimum_percentage": 27.52,
+                "input_percentage": 15.0,
+                "votes": {
+                    "Lab": 20084,
+                    "Con": 12354,
+                    "PC": 12319,
+                    "RUK": 0,
+                    "Green": 0,
+                    "LD": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "4": {
+                "maximum_percentage": 100.0,
+                "minimum_percentage": 100.0,
+                "input_percentage": 30.0,
+                "votes": {
+                    "Lab": 44757,
+                    "Con": 0,
+                    "PC": 0,
+                    "RUK": 0,
+                    "Green": 0,
+                    "LD": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            }
+        }
+    },
+    "Ceredigion Preseli": {
+        "name": "Ceredigion Preseli",
+        "country": "Wales",
+        "mp": "Ben Lake",
+        "votes": {
+            "0": {
+                "maximum_percentage": 46.95,
+                "minimum_percentage": 0.49,
+                "input_percentage": 0,
+                "votes": {
+                    "PC": 21738,
+                    "LD": 6949,
+                    "Lab": 5386,
+                    "RUK": 5374,
+                    "Con": 4763,
+                    "Green": 1864,
+                    "Other": 228,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 47.98,
+                "minimum_percentage": 11.32,
+                "input_percentage": 5.0,
+                "votes": {
+                    "PC": 22217,
+                    "LD": 7428,
+                    "Lab": 5865,
+                    "RUK": 5550,
+                    "Con": 5242,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "2": {
+                "maximum_percentage": 63.97,
+                "minimum_percentage": 36.03,
+                "input_percentage": 15.0,
+                "votes": {
+                    "PC": 29620,
+                    "LD": 16681,
+                    "Lab": 0,
+                    "RUK": 0,
+                    "Con": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 1
+            }
+        }
+    },
+    "Clwyd East": {
+        "name": "Clwyd East",
+        "country": "Wales",
+        "mp": "Becky Gittins",
+        "votes": {
+            "0": {
+                "maximum_percentage": 38.65,
+                "minimum_percentage": 1.25,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 18484,
+                    "Con": 13862,
+                    "RUK": 7626,
+                    "PC": 3733,
+                    "LD": 1859,
+                    "Green": 1659,
+                    "Other": 599,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 40.9,
+                "minimum_percentage": 10.48,
+                "input_percentage": 5.0,
+                "votes": {
+                    "Lab": 19558,
+                    "Con": 14936,
+                    "RUK": 8314,
+                    "PC": 5014,
+                    "LD": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "2": {
+                "maximum_percentage": 45.39,
+                "minimum_percentage": 18.88,
+                "input_percentage": 15.0,
+                "votes": {
+                    "Lab": 21707,
+                    "Con": 17085,
+                    "RUK": 9030,
+                    "PC": 0,
+                    "LD": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "3": {
+                "maximum_percentage": 51.69,
+                "minimum_percentage": 48.31,
+                "input_percentage": 20.0,
+                "votes": {
+                    "Lab": 24717,
+                    "Con": 23105,
+                    "RUK": 0,
+                    "PC": 0,
+                    "LD": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            }
+        }
+    },
+    "Clwyd North": {
+        "name": "Clwyd North",
+        "country": "Wales",
+        "mp": "Gill German",
+        "votes": {
+            "0": {
+                "maximum_percentage": 35.54,
+                "minimum_percentage": 3.34,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 14794,
+                    "Con": 13598,
+                    "RUK": 7000,
+                    "PC": 3159,
+                    "LD": 1685,
+                    "Green": 1391,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 37.44,
+                "minimum_percentage": 9.94,
+                "input_percentage": 5.0,
+                "votes": {
+                    "Lab": 15585,
+                    "Con": 14389,
+                    "RUK": 7513,
+                    "PC": 4138,
+                    "LD": 0,
+                    "Green": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 2
+            },
+            "2": {
+                "maximum_percentage": 41.7,
+                "minimum_percentage": 19.47,
+                "input_percentage": 10.0,
+                "votes": {
+                    "Lab": 17358,
+                    "Con": 16162,
+                    "RUK": 8104,
+                    "PC": 0,
+                    "LD": 0,
+                    "Green": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 3
+            },
+            "3": {
+                "maximum_percentage": 51.81,
+                "minimum_percentage": 48.19,
+                "input_percentage": 20.0,
+                "votes": {
+                    "Con": 21565,
+                    "Lab": 20059,
+                    "RUK": 0,
+                    "PC": 0,
+                    "LD": 0,
+                    "Green": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 3
+            }
+        }
+    },
+    "Dwyfor Meirionnydd": {
+        "name": "Dwyfor Meirionnydd",
+        "country": "Wales",
+        "mp": "Liz Saville Roberts",
+        "votes": {
+            "0": {
+                "maximum_percentage": 53.94,
+                "minimum_percentage": 0.74,
+                "input_percentage": 0,
+                "votes": {
+                    "PC": 21788,
+                    "Lab": 5912,
+                    "RUK": 4857,
+                    "Con": 4712,
+                    "Green": 1448,
+                    "LD": 1381,
+                    "Other": 297,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 53.94,
+                "minimum_percentage": 0.74,
+                "input_percentage": 0,
+                "votes": {
+                    "PC": 21788,
+                    "Lab": 5912,
+                    "RUK": 4857,
+                    "Con": 4712,
+                    "Green": 1448,
+                    "LD": 1381,
+                    "Other": 297,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            }
+        }
+    },
+    "Gower": {
+        "name": "Gower",
+        "country": "Wales",
+        "mp": "Tonia Antoniazzi",
+        "votes": {
+            "0": {
+                "maximum_percentage": 43.36,
+                "minimum_percentage": 0.6,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 20480,
+                    "Con": 8913,
+                    "RUK": 8530,
+                    "PC": 3942,
+                    "LD": 2593,
+                    "Green": 2488,
+                    "Other": 283,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 43.47,
+                "minimum_percentage": 5.37,
+                "input_percentage": 5.0,
+                "votes": {
+                    "Lab": 20530,
+                    "Con": 8963,
+                    "RUK": 8563,
+                    "PC": 3992,
+                    "LD": 2643,
+                    "Green": 2538,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "2": {
+                "maximum_percentage": 51.26,
+                "minimum_percentage": 21.97,
+                "input_percentage": 10.0,
+                "votes": {
+                    "Lab": 24210,
+                    "Con": 12643,
+                    "RUK": 10377,
+                    "PC": 0,
+                    "LD": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 1
+            }
+        }
+    },
+    "Llanelli": {
+        "name": "Llanelli",
+        "country": "Wales",
+        "mp": "Nia Griffith",
+        "votes": {
+            "0": {
+                "maximum_percentage": 31.3,
+                "minimum_percentage": 1.47,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 12751,
+                    "RUK": 11247,
+                    "PC": 9511,
+                    "Con": 4275,
+                    "LD": 1254,
+                    "Green": 1106,
+                    "Other": 600,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 33.2,
+                "minimum_percentage": 12.39,
+                "input_percentage": 5.0,
+                "votes": {
+                    "Lab": 13526,
+                    "RUK": 11746,
+                    "PC": 10425,
+                    "Con": 5050,
+                    "LD": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 3
+            },
+            "2": {
+                "maximum_percentage": 35.03,
+                "minimum_percentage": 30.24,
+                "input_percentage": 15.0,
+                "votes": {
+                    "RUK": 14271,
+                    "Lab": 14157,
+                    "PC": 12319,
+                    "Con": 0,
+                    "LD": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 3
+            },
+            "3": {
+                "maximum_percentage": 100.01,
+                "minimum_percentage": 100.01,
+                "input_percentage": 35.0,
+                "votes": {
+                    "RUK": 40747,
+                    "Lab": 0,
+                    "PC": 0,
+                    "Con": 0,
+                    "LD": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 3
+            }
+        }
+    },
+    "Merthyr Tydfil and Aberdare": {
+        "name": "Merthyr Tydfil and Aberdare",
+        "country": "Wales",
+        "mp": "Gerald Jones",
+        "votes": {
+            "0": {
+                "maximum_percentage": 44.84,
+                "minimum_percentage": 3.17,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 15791,
+                    "RUK": 8344,
+                    "PC": 4768,
+                    "Con": 2687,
+                    "LD": 1276,
+                    "Green": 1231,
+                    "Other": 1118,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 47.56,
+                "minimum_percentage": 10.35,
+                "input_percentage": 5.0,
+                "votes": {
+                    "Lab": 16749,
+                    "RUK": 8954,
+                    "PC": 5867,
+                    "Con": 3645,
+                    "LD": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "2": {
+                "maximum_percentage": 48.86,
+                "minimum_percentage": 20.54,
+                "input_percentage": 15.0,
+                "votes": {
+                    "Lab": 17205,
+                    "RUK": 10776,
+                    "PC": 7234,
+                    "Con": 0,
+                    "LD": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "3": {
+                "maximum_percentage": 64.27,
+                "minimum_percentage": 35.73,
+                "input_percentage": 25.0,
+                "votes": {
+                    "Lab": 22631,
+                    "RUK": 12584,
+                    "PC": 0,
+                    "Con": 0,
+                    "LD": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            }
+        }
+    },
+    "Mid and South Pembrokeshire": {
+        "name": "Mid and South Pembrokeshire",
+        "country": "Wales",
+        "mp": "Henry Tufnell",
+        "votes": {
+            "0": {
+                "maximum_percentage": 35.4,
+                "minimum_percentage": 1.46,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 16505,
+                    "Con": 14627,
+                    "RUK": 7828,
+                    "PC": 2962,
+                    "LD": 2372,
+                    "Green": 1654,
+                    "Other": 681,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 36.53,
+                "minimum_percentage": 6.22,
+                "input_percentage": 5.0,
+                "votes": {
+                    "Lab": 17033,
+                    "Con": 15155,
+                    "RUK": 8052,
+                    "PC": 3490,
+                    "LD": 2900,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 1
+            },
+            "2": {
+                "maximum_percentage": 41.81,
+                "minimum_percentage": 20.41,
+                "input_percentage": 10.0,
+                "votes": {
+                    "Lab": 19496,
+                    "Con": 17618,
+                    "RUK": 9518,
+                    "PC": 0,
+                    "LD": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 3
+            },
+            "3": {
+                "maximum_percentage": 51.39,
+                "minimum_percentage": 48.62,
+                "input_percentage": 25.0,
+                "votes": {
+                    "Con": 23963,
+                    "Lab": 22669,
+                    "RUK": 0,
+                    "PC": 0,
+                    "LD": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 3
+            }
+        }
+    },
+    "Monmouthshire": {
+        "name": "Monmouthshire",
+        "country": "Wales",
+        "mp": "Catherine Fookes",
+        "votes": {
+            "0": {
+                "maximum_percentage": 41.32,
+                "minimum_percentage": 1.6,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 21010,
+                    "Con": 17672,
+                    "RUK": 5438,
+                    "Green": 2357,
+                    "LD": 2279,
+                    "PC": 1273,
+                    "Other": 815,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 46.48,
+                "minimum_percentage": 13.61,
+                "input_percentage": 5.0,
+                "votes": {
+                    "Lab": 23632,
+                    "Con": 20294,
+                    "RUK": 6921,
+                    "Green": 0,
+                    "LD": 0,
+                    "PC": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 3
+            },
+            "2": {
+                "maximum_percentage": 51.02,
+                "minimum_percentage": 48.99,
+                "input_percentage": 15.0,
+                "votes": {
+                    "Lab": 25939,
+                    "Con": 24908,
+                    "RUK": 0,
+                    "Green": 0,
+                    "LD": 0,
+                    "PC": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 3
+            }
+        }
+    },
+    "Montgomeryshire and GlyndÅµr": {
+        "name": "Montgomeryshire and GlyndÅµr",
+        "country": "Wales",
+        "mp": "Steve Witherden",
+        "votes": {
+            "0": {
+                "maximum_percentage": 29.38,
+                "minimum_percentage": 4.03,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 12709,
+                    "RUK": 8894,
+                    "Con": 7775,
+                    "LD": 6470,
+                    "PC": 5667,
+                    "Green": 1744,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 30.31,
+                "minimum_percentage": 14.03,
+                "input_percentage": 5.0,
+                "votes": {
+                    "Lab": 13111,
+                    "RUK": 9028,
+                    "Con": 8177,
+                    "LD": 6872,
+                    "PC": 6069,
+                    "Green": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 2
+            },
+            "2": {
+                "maximum_percentage": 34.52,
+                "minimum_percentage": 20.1,
+                "input_percentage": 15.0,
+                "votes": {
+                    "Lab": 14932,
+                    "Con": 9998,
+                    "RUK": 9635,
+                    "LD": 8693,
+                    "PC": 0,
+                    "Green": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 1
+            },
+            "3": {
+                "maximum_percentage": 100.0,
+                "minimum_percentage": 100.0,
+                "input_percentage": 25.0,
+                "votes": {
+                    "Lab": 43258,
+                    "Con": 0,
+                    "RUK": 0,
+                    "LD": 0,
+                    "PC": 0,
+                    "Green": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 1
+            }
+        }
+    },
+    "Neath and Swansea East": {
+        "name": "Neath and Swansea East",
+        "country": "Wales",
+        "mp": "Carolyn Harris",
+        "votes": {
+            "0": {
+                "maximum_percentage": 41.85,
+                "minimum_percentage": 4.26,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 16797,
+                    "RUK": 10170,
+                    "PC": 5350,
+                    "Con": 3765,
+                    "LD": 2344,
+                    "Green": 1711,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 42.83,
+                "minimum_percentage": 6.82,
+                "input_percentage": 5.0,
+                "votes": {
+                    "Lab": 17192,
+                    "RUK": 10302,
+                    "PC": 5745,
+                    "Con": 4160,
+                    "LD": 2739,
+                    "Green": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 1
+            },
+            "2": {
+                "maximum_percentage": 44.35,
+                "minimum_percentage": 11.88,
+                "input_percentage": 10.0,
+                "votes": {
+                    "Lab": 17801,
+                    "RUK": 10911,
+                    "PC": 6658,
+                    "Con": 4769,
+                    "LD": 0,
+                    "Green": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 2
+            },
+            "3": {
+                "maximum_percentage": 45.84,
+                "minimum_percentage": 21.04,
+                "input_percentage": 15.0,
+                "votes": {
+                    "Lab": 18397,
+                    "RUK": 13295,
+                    "PC": 8446,
+                    "Con": 0,
+                    "LD": 0,
+                    "Green": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 1
+            },
+            "4": {
+                "maximum_percentage": 61.62,
+                "minimum_percentage": 38.39,
+                "input_percentage": 25.0,
+                "votes": {
+                    "Lab": 24731,
+                    "RUK": 15407,
+                    "PC": 0,
+                    "Con": 0,
+                    "LD": 0,
+                    "Green": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 1
+            }
+        }
+    },
+    "Newport East": {
+        "name": "Newport East",
+        "country": "Wales",
+        "mp": "Jessica Morden",
+        "votes": {
+            "0": {
+                "maximum_percentage": 42.49,
+                "minimum_percentage": 5.03,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 16370,
+                    "RUK": 7361,
+                    "Con": 6487,
+                    "PC": 2239,
+                    "Green": 2092,
+                    "LD": 2045,
+                    "Other": 1937,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 50.96,
+                "minimum_percentage": 23.74,
+                "input_percentage": 10.0,
+                "votes": {
+                    "Lab": 19635,
+                    "Con": 9752,
+                    "RUK": 9146,
+                    "PC": 0,
+                    "Green": 0,
+                    "LD": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 2
+            }
+        }
+    },
+    "Newport West and Islwyn": {
+        "name": "Newport West and Islwyn",
+        "country": "Wales",
+        "mp": "Ruth Jones",
+        "votes": {
+            "0": {
+                "maximum_percentage": 41.5,
+                "minimum_percentage": 3.81,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 17409,
+                    "RUK": 8541,
+                    "Con": 6710,
+                    "PC": 3529,
+                    "LD": 2087,
+                    "Green": 2078,
+                    "Other": 1597,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 45.13,
+                "minimum_percentage": 12.6,
+                "input_percentage": 5.0,
+                "votes": {
+                    "Lab": 18932,
+                    "RUK": 9503,
+                    "Con": 8233,
+                    "PC": 5284,
+                    "LD": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 1
+            },
+            "2": {
+                "maximum_percentage": 50.53,
+                "minimum_percentage": 24.45,
+                "input_percentage": 15.0,
+                "votes": {
+                    "Lab": 21197,
+                    "Con": 10498,
+                    "RUK": 10258,
+                    "PC": 0,
+                    "LD": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 2
+            }
+        }
+    },
+    "Pontypridd": {
+        "name": "Pontypridd",
+        "country": "Wales",
+        "mp": "Alex Davies-Jones",
+        "votes": {
+            "0": {
+                "maximum_percentage": 41.2,
+                "minimum_percentage": 4.08,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 16225,
+                    "RUK": 7823,
+                    "PC": 5275,
+                    "Con": 3775,
+                    "Other": 2809,
+                    "Green": 1865,
+                    "LD": 1606,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 43.04,
+                "minimum_percentage": 8.97,
+                "input_percentage": 5.0,
+                "votes": {
+                    "Lab": 16947,
+                    "RUK": 8258,
+                    "PC": 6143,
+                    "Con": 4497,
+                    "Other": 3531,
+                    "Green": 0,
+                    "LD": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 2
+            },
+            "2": {
+                "maximum_percentage": 45.48,
+                "minimum_percentage": 13.87,
+                "input_percentage": 10.0,
+                "votes": {
+                    "Lab": 17910,
+                    "RUK": 8900,
+                    "PC": 7106,
+                    "Con": 5460,
+                    "Other": 0,
+                    "Green": 0,
+                    "LD": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 2
+            },
+            "3": {
+                "maximum_percentage": 47.21,
+                "minimum_percentage": 23.25,
+                "input_percentage": 15.0,
+                "votes": {
+                    "Lab": 18592,
+                    "RUK": 11630,
+                    "PC": 9154,
+                    "Con": 0,
+                    "Other": 0,
+                    "Green": 0,
+                    "LD": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 2
+            },
+            "4": {
+                "maximum_percentage": 64.65,
+                "minimum_percentage": 35.34,
+                "input_percentage": 25.0,
+                "votes": {
+                    "Lab": 25458,
+                    "RUK": 13918,
+                    "PC": 0,
+                    "Con": 0,
+                    "Other": 0,
+                    "Green": 0,
+                    "LD": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 2
+            }
+        }
+    },
+    "Rhondda and Ogmore": {
+        "name": "Rhondda and Ogmore",
+        "country": "Wales",
+        "mp": "Chris Bryant",
+        "votes": {
+            "0": {
+                "maximum_percentage": 47.81,
+                "minimum_percentage": 2.61,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 17118,
+                    "RUK": 9328,
+                    "PC": 5198,
+                    "Con": 2050,
+                    "Green": 1177,
+                    "LD": 935,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 49.37,
+                "minimum_percentage": 7.29,
+                "input_percentage": 5.0,
+                "votes": {
+                    "Lab": 17679,
+                    "RUK": 9654,
+                    "PC": 5863,
+                    "Con": 2611,
+                    "Green": 0,
+                    "LD": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 1
+            },
+            "2": {
+                "maximum_percentage": 50.28,
+                "minimum_percentage": 19.11,
+                "input_percentage": 10.0,
+                "votes": {
+                    "Lab": 18005,
+                    "RUK": 10960,
+                    "PC": 6842,
+                    "Con": 0,
+                    "Green": 0,
+                    "LD": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0,
+                    "Other": 0
+                },
+                "margin_of_error": 1
+            }
+        }
+    },
+    "Swansea West": {
+        "name": "Swansea West",
+        "country": "Wales",
+        "mp": "Torsten Bell",
+        "votes": {
+            "0": {
+                "maximum_percentage": 41.4,
+                "minimum_percentage": 0.95,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 14761,
+                    "RUK": 6246,
+                    "LD": 4367,
+                    "PC": 4105,
+                    "Con": 3536,
+                    "Green": 2305,
+                    "Other": 337,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 41.56,
+                "minimum_percentage": 6.63,
+                "input_percentage": 5.0,
+                "votes": {
+                    "Lab": 14820,
+                    "RUK": 6286,
+                    "LD": 4426,
+                    "PC": 4164,
+                    "Con": 3595,
+                    "Green": 2364,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 2
+            },
+            "2": {
+                "maximum_percentage": 43.09,
+                "minimum_percentage": 11.61,
+                "input_percentage": 10.0,
+                "votes": {
+                    "Lab": 15366,
+                    "RUK": 6468,
+                    "LD": 4972,
+                    "PC": 4710,
+                    "Con": 4141,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "3": {
+                "maximum_percentage": 62.29,
+                "minimum_percentage": 37.71,
+                "input_percentage": 15.0,
+                "votes": {
+                    "Lab": 22212,
+                    "RUK": 13445,
+                    "LD": 0,
+                    "PC": 0,
+                    "Con": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            }
+        }
+    },
+    "Torfaen": {
+        "name": "Torfaen",
+        "country": "Wales",
+        "mp": "Nick Thomas-Symonds",
+        "votes": {
+            "0": {
+                "maximum_percentage": 42.5,
+                "minimum_percentage": 2.85,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 15176,
+                    "RUK": 7854,
+                    "Con": 5737,
+                    "PC": 2571,
+                    "Green": 1705,
+                    "LD": 1644,
+                    "Other": 1018,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 45.74,
+                "minimum_percentage": 10.95,
+                "input_percentage": 5.0,
+                "votes": {
+                    "Lab": 16331,
+                    "RUK": 8574,
+                    "Con": 6892,
+                    "PC": 3909,
+                    "Green": 0,
+                    "LD": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 1
+            },
+            "2": {
+                "maximum_percentage": 50.43,
+                "minimum_percentage": 23.99,
+                "input_percentage": 15.0,
+                "votes": {
+                    "Lab": 18006,
+                    "RUK": 9132,
+                    "Con": 8567,
+                    "PC": 0,
+                    "Green": 0,
+                    "LD": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            }
+        }
+    },
+    "Vale of Glamorgan": {
+        "name": "Vale of Glamorgan",
+        "country": "Wales",
+        "mp": "Kanishka Narayan",
+        "votes": {
+            "0": {
+                "maximum_percentage": 38.71,
+                "minimum_percentage": 1.86,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 17740,
+                    "Con": 13524,
+                    "RUK": 6973,
+                    "PC": 3245,
+                    "Green": 1881,
+                    "LD": 1612,
+                    "Other": 851,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 41.23,
+                "minimum_percentage": 9.99,
+                "input_percentage": 5.0,
+                "votes": {
+                    "Lab": 18894,
+                    "Con": 14678,
+                    "RUK": 7674,
+                    "PC": 4578,
+                    "Green": 0,
+                    "LD": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 2
+            },
+            "2": {
+                "maximum_percentage": 45.51,
+                "minimum_percentage": 18.17,
+                "input_percentage": 10.0,
+                "votes": {
+                    "Lab": 20856,
+                    "Con": 16640,
+                    "RUK": 8328,
+                    "PC": 0,
+                    "Green": 0,
+                    "LD": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 2
+            },
+            "3": {
+                "maximum_percentage": 51.57,
+                "minimum_percentage": 48.43,
+                "input_percentage": 20.0,
+                "votes": {
+                    "Lab": 23632,
+                    "Con": 22192,
+                    "RUK": 0,
+                    "PC": 0,
+                    "Green": 0,
+                    "LD": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 2
+            }
+        }
+    },
+    "Wrexham": {
+        "name": "Wrexham",
+        "country": "Wales",
+        "mp": "Andrew Ranger",
+        "votes": {
+            "0": {
+                "maximum_percentage": 39.22,
+                "minimum_percentage": 1.19,
+                "input_percentage": 0,
+                "votes": {
+                    "Lab": 15836,
+                    "Con": 9888,
+                    "RUK": 6915,
+                    "PC": 4138,
+                    "LD": 1777,
+                    "Green": 1339,
+                    "Other": 480,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 41.52,
+                "minimum_percentage": 13.04,
+                "input_percentage": 5.0,
+                "votes": {
+                    "Lab": 16764,
+                    "Con": 10816,
+                    "RUK": 7531,
+                    "PC": 5263,
+                    "LD": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 1
+            },
+            "2": {
+                "maximum_percentage": 47.11,
+                "minimum_percentage": 20.52,
+                "input_percentage": 15.0,
+                "votes": {
+                    "Lab": 19020,
+                    "Con": 13072,
+                    "RUK": 8283,
+                    "PC": 0,
+                    "LD": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 2
+            },
+            "3": {
+                "maximum_percentage": 53.95,
+                "minimum_percentage": 46.06,
+                "input_percentage": 25.0,
+                "votes": {
+                    "Lab": 21781,
+                    "Con": 18594,
+                    "RUK": 0,
+                    "PC": 0,
+                    "LD": 0,
+                    "Green": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 2
+            }
+        }
+    },
+    "Ynys MÃ´n": {
+        "name": "Ynys MÃ´n",
+        "country": "Wales",
+        "mp": "Llinos Medi",
+        "votes": {
+            "0": {
+                "maximum_percentage": 32.46,
+                "minimum_percentage": 0.61,
+                "input_percentage": 0,
+                "votes": {
+                    "PC": 10590,
+                    "Con": 9953,
+                    "Lab": 7619,
+                    "RUK": 3223,
+                    "Green": 604,
+                    "LD": 439,
+                    "Other": 200,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 0
+            },
+            "1": {
+                "maximum_percentage": 33.63,
+                "minimum_percentage": 10.47,
+                "input_percentage": 5.0,
+                "votes": {
+                    "PC": 10972,
+                    "Con": 10287,
+                    "Lab": 7953,
+                    "RUK": 3417,
+                    "Green": 0,
+                    "LD": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 1
+            },
+            "2": {
+                "maximum_percentage": 37.51,
+                "minimum_percentage": 27.37,
+                "input_percentage": 15.0,
+                "votes": {
+                    "Con": 12240,
+                    "PC": 11460,
+                    "Lab": 8929,
+                    "RUK": 0,
+                    "Green": 0,
+                    "LD": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 1
+            },
+            "3": {
+                "maximum_percentage": 55.65,
+                "minimum_percentage": 44.35,
+                "input_percentage": 30.0,
+                "votes": {
+                    "PC": 18157,
+                    "Con": 14472,
+                    "Lab": 0,
+                    "RUK": 0,
+                    "Green": 0,
+                    "LD": 0,
+                    "Other": 0,
+                    "SNP": 0,
+                    "DUP": 0,
+                    "SF": 0,
+                    "SDLP": 0,
+                    "UUP": 0,
+                    "APNI": 0,
+                    "Ind": 0
+                },
+                "margin_of_error": 1
+            }
+        }
+    }
+}

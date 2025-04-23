@@ -31,29 +31,66 @@ if platform.system() == "Darwin":
 load_voter_data(results_file_path)
 load_mapping_data(mapping_file_path)
 
+
 threshold_percent = float(input("Increase threshold percentage by increments of:   %" + "\b"*3))
 
 def check_threshold_percentage(constituency, threshold_percent):
-    while constituency.minimum_percentage > threshold_percent:
-        threshold_percent += threshold_percent
-        print(f"Threshold percentage for {constituency.name}'s Round {constituency.knockout_counter + 1} is too low. Doubling to {threshold_percent}.")
-    while constituency.maximum_percentage < threshold_percent:
-        threshold_percent -= threshold_percent
-        print(f"Threshold percentage for {constituency.name}'s Round {constituency.knockout_counter + 1} is too low. Doubling to {threshold_percent}.")
+    new_threshold_percent = threshold_percent
+    while constituency.minimum_percentage >= new_threshold_percent:
+        new_threshold_percent += threshold_percent
+        print(f"Threshold percentage for {constituency.name}'s Round {constituency.knockout_counter + 1} is too low. New threshold: {new_threshold_percent}%.")
+    while constituency.maximum_percentage <= new_threshold_percent:
+        new_threshold_percent -= threshold_percent
+        print(f"Threshold percentage for {constituency.name}'s Round {constituency.knockout_counter + 1} is too high. New threshold: {new_threshold_percent}.")
+    return new_threshold_percent
 
-constituencyOBJ = {}
-for c in constituencies.constituencyrepo:
-    constituency = constituencies.get_single_constituency(c.name)
-    p = constituency.minimum_percentage
-    print(constituency.name, constituency.minimum_percentage)
-    if constituency.check_for_winner():
-        constituency.add_to_payload(bumper=1)
-    while not constituency.check_for_winner():
-        check_threshold_percentage(constituency, threshold_percent)
-        constituency.remove_lower_percentile(threshold_percent)
-        constituency.redistribute_votes(mapping_df)
-        constituency.save_round_to_payload()
-    constituencyOBJ[constituency.name] = constituency.info
+def generate_JSON(constituencies):
+    country = {}
 
-constituencyJSON = json.dumps(constituencyOBJ)
-print(constituencyJSON)
+    for c in constituencies.constituencyrepo:
+        if c.check_for_winner():
+            c.save_round_to_payload(bumper=1)
+        while not c.check_for_winner():
+            new_threshold_percent = check_threshold_percentage(c, threshold_percent)
+            c.remove_lower_percentile(new_threshold_percent)
+            c.redistribute_votes(mapping_df)
+
+            c.save_round_to_payload()
+        country[c.name] = c.info
+
+    with open('data.json', 'w', encoding='utf-8') as f:
+        json.dump(country, f, ensure_ascii=False, indent=4)
+
+
+def generate_df(constituencies):
+    country = {}
+
+    for c in constituencies.constituencyrepo:
+        if c.check_for_winner():
+            c.save_round_to_payload(bumper=1)
+        while not c.check_for_winner():
+            new_threshold_percent = check_threshold_percentage(c, threshold_percent)
+            c.remove_lower_percentile(new_threshold_percent)
+            c.redistribute_votes(mapping_df)
+            c.save_round_to_payload()
+            
+        country[c.name] = [
+            self.con,
+            self.lab,
+            self.ld,
+            self.ruk,
+            self.green,
+            self.snp,
+            self.pc,
+            self.dup,
+            self.sf,
+            self.sdlp,
+            self.uup,
+            self.apni,
+            self.ind,
+            self.other
+        ]
+    
+
+# constituencyJSON = json.dumps(constituencyOBJ)
+# print(constituencyJSON)

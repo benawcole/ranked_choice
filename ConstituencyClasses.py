@@ -40,7 +40,6 @@ class Constituency:
         self.total_votes = int(con + lab + ld + ruk + green + snp + pc + dup + sf + sdlp + uup + apni + ind + other)
         self.knockout_counter = 0
         self.filtered = False
-        self.rounds = {}
         self.payload = {}
         self.input_percent = 0
         self.new_total_votes = self.total_votes
@@ -48,8 +47,7 @@ class Constituency:
     
     @property
     def info(self):
-        return {"id":self.id,
-                "name":self.name,
+        return {"name":self.name,
                 "country":self.country,
                 "mp":self.mp,
                 "votes": self.payload}
@@ -70,7 +68,7 @@ class Constituency:
 
     def save_round_to_payload(self, bumper=0):
         self.payload[self.knockout_counter + bumper] = {  
-            "maximum_percentage":self.maximum_percentage,
+            "maximum_percentage":self.maximum_percentage, #N.B. The thresholds for the FOLLOWING round
             "minimum_percentage":self.minimum_percentage,
             "input_percentage":self.input_percent,
             "votes":self.sorted_votes,
@@ -83,8 +81,8 @@ class Constituency:
 
     def remove_lower_percentile(self, percent):
         self.input_percent = percent
-        self.knockout_counter += 1
         if not self.check_for_winner():
+            self.knockout_counter += 1
             self.remaining_votes = {k: 0 for k, v in self.sorted_votes.items()}
             self.extra_votes = {k: 0 for k, v in self.sorted_votes.items()}
             for k, v in self.sorted_votes.items():
@@ -92,12 +90,12 @@ class Constituency:
                     self.remaining_votes[k] = v
                 else:
                     self.extra_votes[k] = v
-            return [self.remaining_votes, self.extra_votes]
 
     def redistribute_votes(self, mapping_df):
-        if self.extra_votes == {k: 0 for k, v in self.sorted_votes.items()}:
-            if not len({k: v for k, v in self.sorted_votes.items() if v > 0}) == 1:
-                raise Exception("No votes to redistribute - please increase the threshold percentage")
+        if self.check_for_winner():
+            return
+        # if self.extra_votes == {k: 0 for k, v in self.sorted_votes.items()}:
+        #     raise Exception("No votes to redistribute - please increase the threshold percentage")
         summing_df = mapping_df.copy()
         # Turn all columns of extra parties to 0
         for k, v in self.remaining_votes.items():
