@@ -75,6 +75,7 @@ class Constituency:
             "margin_of_error":abs(self.new_total_votes-self.total_votes)}
 
     def check_for_winner(self):
+        print("NEXT ITER:" + f"{next(iter(self.sorted_votes.values()))}")
         if next(iter(self.sorted_votes.values())) > 0.5 * self.total_votes:
             self.filtered = True
         return self.filtered
@@ -90,6 +91,16 @@ class Constituency:
                     self.remaining_votes[k] = v
                 else:
                     self.extra_votes[k] = v
+
+    def knockout_loser(self):
+        self.check_for_winner()
+        if not self.filtered:
+            non_zero_votes = {k: v for k, v in list(self.sorted_votes.items()) if v != 0}
+            self.knockout_counter += 1
+            self.remaining_votes = {k: v for k, v in list(non_zero_votes.items())[0:-1]}
+            self.extra_votes = {list(non_zero_votes.items())[-1][0]:list(non_zero_votes.items())[-1][1]}
+        else:
+            print("else")
 
     def redistribute_votes(self, mapping_df):
         if self.check_for_winner():

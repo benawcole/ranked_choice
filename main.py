@@ -24,8 +24,8 @@ if platform.system() == "Windows":
     results_file_path = r'D:\Documents\Python\Ranked Choice Voting\2024-results-adjusted.xlsx'
     mapping_file_path = "" #JOHN FILL THIS IN
 if platform.system() == "Darwin":
-    results_file_path = "/Users/benawcole/Desktop/Ranked Choice/2024-results-adjusted.xlsx"
-    mapping_file_path = "/Users/benawcole/Desktop/Ranked Choice/Mapping Proposal 1.xlsx"
+    results_file_path = "./2024-results-adjusted.xlsx"
+    mapping_file_path = "./Mapping Proposal 1.xlsx"
 
 load_voter_data(results_file_path)
 load_mapping_data(mapping_file_path)
@@ -40,7 +40,7 @@ while loop:
     else:
         constituency = constituencies.get_single_constituency(c)
         while not constituency.check_for_winner():
-            mapping = input(f"Please confirm the loaded mapping matrix:\n{mapping_file_path}\n\n{mapping_df}\n\n(Y/N): ")
+            mapping = input(f"Please confirm the loaded mapping matrix:\n{mapping_file_path[2:]}\n\n{mapping_df}\n\n(Y/N): ")
             if mapping.lower() == "y":
                 while not constituency.check_for_winner():
                     print(f"Threshold percentage for next round: Min: {constituency.minimum_percentage}%, Max: {constituency.maximum_percentage}%")
