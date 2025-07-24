@@ -76,7 +76,7 @@ class Constituency:
 
     def check_for_winner(self):
         print("NEXT ITER:" + f"{next(iter(self.sorted_votes.values()))}")
-        if next(iter(self.sorted_votes.values())) > 0.5 * self.total_votes:
+        if next(iter(self.sorted_votes.values())) > 0.5 * self.new_total_votes:
             self.filtered = True
         return self.filtered
 
@@ -95,42 +95,114 @@ class Constituency:
     def knockout_loser(self):
         self.check_for_winner()
         if not self.filtered:
-            non_zero_votes = {k: v for k, v in list(self.sorted_votes.items()) if v != 0}
+            non_zero_votes = {k: v for k, v in self.votes.items() if v > 0}
+            loser = min(non_zero_votes, key=non_zero_votes.get)
+            self.extra_votes = {loser: non_zero_votes[loser]}
+            self.remaining_votes = {k: v for k, v in non_zero_votes.items() if k != loser}
             self.knockout_counter += 1
-            self.remaining_votes = {k: v for k, v in list(non_zero_votes.items())[0:-1]}
-            self.extra_votes = {list(non_zero_votes.items())[-1][0]:list(non_zero_votes.items())[-1][1]}
         else:
             print("else")
+
+    # def redistribute_votes(self, mapping_df):
+    #     if self.check_for_winner():
+    #         return
+    #     # if self.extra_votes == {k: 0 for k, v in self.sorted_votes.items()}:
+    #     #     raise Exception("No votes to redistribute - please increase the threshold percentage")
+    #     summing_df = mapping_df.copy()
+    #     # Turn all columns of extra parties to 0
+    #     for k, v in self.remaining_votes.items():
+    #         if v == 0:
+    #             summing_df[k] = 0
+    #     # Calculate redistribution of extra votes to non-0 parties
+    #     for k, v in self.extra_votes.items():
+    #         total_row = summing_df.loc[k].sum()
+    #         for column in mapping_df:
+    #             result = v * (summing_df.loc[k, column] / total_row)
+    #             if result != 0 and not pd.isna(result):
+    #                 summing_df.loc[k, column] = round(result, 0)
+    #             elif summing_df.loc[k, column] == mapping_df.loc[k, column]:
+    #                 summing_df.loc[k, column] = 0
+    #     # add Total at the bottom
+    #     df_sum = summing_df.sum()
+    #     summing_df.loc["Total"] = df_sum
+    #     # add to winners' total
+    #     self.new_total_votes = 0
+    #     for k, v in self.remaining_votes.items():
+    #         self.remaining_votes[k] = v + int(summing_df.loc["Total", k])
+    #         self.new_total_votes += v + int(summing_df.loc["Total", k])
+    #     self.votes = self.remaining_votes
+    #     self.check_for_winner()
+    #     self.save_round_to_payload()
+    #     return summing_df
 
     def redistribute_votes(self, mapping_df):
         if self.check_for_winner():
             return
-        # if self.extra_votes == {k: 0 for k, v in self.sorted_votes.items()}:
-        #     raise Exception("No votes to redistribute - please increase the threshold percentage")
         summing_df = mapping_df.copy()
-        # Turn all columns of extra parties to 0
-        for k, v in self.remaining_votes.items():
-            if v == 0:
-                summing_df[k] = 0
-        # Calculate redistribution of extra votes to non-0 parties
-        for k, v in self.extra_votes.items():
-            total_row = summing_df.loc[k].sum()
-            for column in mapping_df:
-                result = v * (summing_df.loc[k, column] / total_row)
-                if result != 0 and not pd.isna(result):
-                    summing_df.loc[k, column] = round(result, 0)
-                elif summing_df.loc[k, column] == mapping_df.loc[k, column]:
-                    summing_df.loc[k, column] = 0
-        # add Total at the bottom
-        df_sum = summing_df.sum()
+
+        # Ensure only parties still in the game can receive votes
+        active_parties = [k for k, v in self.remaining_votes.items() if v > 0]
+
+        # Zero out columns for eliminated parties in summing_df
+        for party in summing_df.columns:
+            if party not in active_parties:
+                summing_df[party] = 0
+
+        # Start redistributing
+        for eliminated_party, votes_to_distribute in self.extra_votes.items():
+            if votes_to_distribute == 0:
+                continue
+
+            # Get only the columns for active parties
+            redistribution_row = summing_df.loc[eliminated_party, active_parties]
+
+            total_weight = redistribution_row.sum()
+            if total_weight == 0:
+                print(f"⚠️ Warning: No redistribution mapping defined for '{eliminated_party}'. Skipping redistribution.")
+                continue
+
+            # Calculate redistribution without rounding yet
+            redistributed = {}
+            for recipient in active_parties:
+                proportion = summing_df.loc[eliminated_party, recipient] / total_weight
+                redistributed[recipient] = votes_to_distribute * proportion
+
+            # Round while preserving the total using a trick
+            rounded = {}
+            cumulative = 0
+            for recipient in active_parties:
+                rounded[recipient] = int(round(redistributed[recipient]))
+                cumulative += rounded[recipient]
+
+            diff = cumulative - int(votes_to_distribute)
+            if diff != 0:
+                # Adjust for rounding error by subtracting from the largest bucket
+                sorted_parties = sorted(rounded.items(), key=lambda x: -x[1])
+                for recipient, _ in sorted_parties:
+                    if diff == 0:
+                        break
+                    if rounded[recipient] > 0:
+                        rounded[recipient] -= 1
+                        diff -= 1
+
+            # Apply the rounded redistribution
+            for recipient in active_parties:
+                summing_df.loc[eliminated_party, recipient] = rounded[recipient]
+
+        # Add totals
+        df_sum = summing_df.loc[self.extra_votes.keys()].sum()
         summing_df.loc["Total"] = df_sum
-        # add to winners' total
+
+        # Update votes and totals
         self.new_total_votes = 0
-        for k, v in self.remaining_votes.items():
-            self.remaining_votes[k] = v + int(summing_df.loc["Total", k])
-            self.new_total_votes += v + int(summing_df.loc["Total", k])
+        for party in active_parties:
+            self.remaining_votes[party] += int(summing_df.loc["Total", party])
+            self.new_total_votes += self.remaining_votes[party]
+
         self.votes = self.remaining_votes
         self.check_for_winner()
+        self.save_round_to_payload()
+
         return summing_df
 
     def __str__(self):
